@@ -132,7 +132,7 @@ export default function Page() {
                   Testsieger 2026
                 </span>
                 <div className="vname">Caldris Flow Plus</div>
-                <div className="vbrand">von ClearPath Ventures OÜ</div>
+                <div className="vbrand">von Caldris Home</div>
               </div>
             </div>
             <div className="vbars">
@@ -237,7 +237,7 @@ export default function Page() {
             <DetailHeader
               rank={1}
               name="Caldris Flow Plus"
-              brand="ClearPath Ventures OÜ"
+              brand="Caldris Home"
               image="/images/caldris-flow-plus.png"
               grade="A+"
               rating="9,6"
@@ -996,10 +996,10 @@ export default function Page() {
         <aside className="shell-side">
           <div className="side-block">
             <details className="adnotice">
-              <summary>Anzeige von ClearPath Ventures OÜ · Hinweis</summary>
+              <summary>Anzeige von Caldris Home · Hinweis</summary>
               <div className="adnotice-body">
                 <p>
-                  Hierbei handelt es sich um bezahlte Werbung für den Caldris Flow Plus von ClearPath Ventures OÜ. Der Inhalt ist
+                  Hierbei handelt es sich um bezahlte Werbung für den Caldris Flow Plus von Caldris Home. Der Inhalt ist
                   ein redaktionell aufbereiteter Meta-Vergleich (kein neutrales, amtliches Testurteil); über die Links
                   können wir eine Provision verdienen.
                 </p>
