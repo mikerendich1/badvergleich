@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
       <div className="anzeige-bar">
-        <strong>Anzeige</strong> · Vergleich &amp; Kaufberatung 2026 · enthält Werbung
+        <strong>Duschköpfe mit Filter</strong> · Vergleich &amp; Kaufberatung 2026
       </div>
 
       <nav className="nav">
@@ -63,6 +63,17 @@ export default function Page() {
             wirklich zu helfen. Oft liegt das nicht am Shampoo, sondern am Wasser: Ein <b>Filterduschkopf</b> kann
             Restchlor, Kalk und feine Rückstände reduzieren, direkt beim Duschen und ganz ohne Umbau.
           </p>
+
+          <div className="author" style={{ margin: '18px 0' }}>
+            <div className="ava">
+              <Image src="/images/lena.jpg" alt="Lena Brandt" width={48} height={48} />
+            </div>
+            <div>
+              <span className="name">Von Lena Brandt</span>
+              <small>Recherchiert aus persönlichem Interesse zu Wasserqualität, Haut &amp; Haar</small>
+            </div>
+          </div>
+
           <p>
             Aber nicht jeder <b>Duschkopf mit Filter</b> hält, was er verspricht. Qualität, Wasserdruck und echte
             Filterleistung schwanken enorm, von günstigen Beauty-Gadgets bis zu zertifizierten Schutzfiltern für Hotels
@@ -1013,9 +1024,9 @@ export default function Page() {
 
           <div className="side-block">
             <div className="wd-eyebrow">Aus dem Magazin</div>
-            <a className="wd-card" href="#ratgeber">
+            <div className="wd-card">
               <div className="wd-img photo">
-                <Image src="/images/hero-shower.jpg" alt="Gefliestes Badezimmer mit Duschkopf" fill sizes="320px" />
+                <Image src="/images/magazin.jpg" alt="Wasseroberfläche mit Wellenringen" fill sizes="320px" />
               </div>
               <div className="wd-cat">Ratgeber</div>
               <h3 className="wd-title">Hartes Wasser verstehen: wann ein Filter wirklich hilft</h3>
@@ -1023,7 +1034,7 @@ export default function Page() {
                 Trockene Haut und strohiges Haar nach dem Duschen? Wir erklären, wann gefiltertes Wasser im Alltag
                 wirklich einen Unterschied macht.
               </p>
-            </a>
+            </div>
           </div>
 
           <div className="side-block">
@@ -1037,7 +1048,7 @@ export default function Page() {
 
           <div className="side-block sticky">
             <div className="wd-eyebrow">Testsieger im Detail</div>
-            <a className="wd-card" href={PRODUCT_URL}>
+            <div className="wd-card">
               <div className="wd-img">
                 <Image src="/images/caldris-flow-plus.png" alt="Caldris Flow Plus" fill sizes="320px" />
               </div>
@@ -1046,7 +1057,7 @@ export default function Page() {
               <p className="wd-desc">
                 Der Testsieger im Detail: alle Daten, Stärken und Schwächen des Caldris Flow Plus auf einen Blick.
               </p>
-            </a>
+            </div>
           </div>
         </aside>
       </div>

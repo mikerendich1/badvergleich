@@ -72,16 +72,6 @@ export default function ImpressumPage() {
         Zustimmung des Betreibers.
       </p>
 
-      <h2>Online-Streitbeilegung</h2>
-      <p>
-        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
-        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">
-          https://ec.europa.eu/consumers/odr
-        </a>
-        .
-        <br />
-        Unsere E-Mail-Adresse finden Sie oben im Impressum.
-      </p>
     </main>
   );
 }

@@ -87,7 +87,7 @@ img{max-width:100%;display:block;}
 
 /* author */
 .author{display:flex;align-items:center;gap:14px;margin:26px 0 6px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:0;}
-.author .ava{width:48px;height:48px;border-radius:0;overflow:hidden;background:linear-gradient(135deg,var(--teal),#3aa99c);color:#fff;
+.author .ava{width:48px;height:48px;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,var(--teal),#3aa99c);color:#fff;
              display:flex;align-items:center;justify-content:center;font-weight:600;font-size:18px;flex-shrink:0;font-family:"Inter",sans-serif;}
 .author .ava img{width:100%;height:100%;object-fit:cover;}
 .author small{display:block;color:var(--muted);font-size:13px;}
@@ -219,7 +219,6 @@ td .pname{font-weight:600;color:var(--ink);}
 .wd-img.photo img{object-fit:cover;padding:0;}
 .wd-cat{text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:700;color:var(--teal);margin-bottom:8px;}
 .wd-title{font-size:20px;font-weight:700;color:var(--ink);line-height:1.25;margin:0 0 10px;}
-.wd-card:hover .wd-title{text-decoration:underline;}
 .wd-desc{font-size:14px;color:var(--muted);margin:0;}
 @media(max-width:1000px){
   .shell{grid-template-columns:1fr;padding:0;gap:0;}
