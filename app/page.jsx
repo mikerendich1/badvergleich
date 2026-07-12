@@ -59,9 +59,9 @@ export default function Page() {
       <section style={{ padding: '24px 0 0' }}>
         <div className="wrap narrow">
           <p style={{ fontSize: '18px', color: 'var(--ink)', lineHeight: 1.7 }}>
-            Nach dem Duschen fühlen sich Haut und Haare manchmal trockener an statt frischer, und keine Pflege scheint
-            wirklich zu helfen. Oft liegt das nicht am Shampoo, sondern am Wasser: Ein <b>Filterduschkopf</b> kann
-            Restchlor, Kalk und feine Rückstände reduzieren, direkt beim Duschen und ganz ohne Umbau.
+            Nach dem Duschen fühlen sich Haut und Haare oft trockener an statt frischer – schuld ist meist nicht das
+            Shampoo, sondern hartes, gechlortes Wasser. Ein <b>Filterduschkopf</b> kann Chlor, Kalk und Rückstände
+            reduzieren, direkt beim Duschen und ohne Umbau.
           </p>
 
           <div className="author" style={{ margin: '18px 0' }}>
@@ -75,16 +75,10 @@ export default function Page() {
           </div>
 
           <p>
-            Aber nicht jeder <b>Duschkopf mit Filter</b> hält, was er verspricht. Qualität, Wasserdruck und echte
-            Filterleistung schwanken enorm, von günstigen Beauty-Gadgets bis zu zertifizierten Schutzfiltern für Hotels
-            und Gewerbe.
-          </p>
-          <p>
-            Deshalb hab ich einen <b>Meta-Vergleich</b> der bekanntesten Modelle gemacht: Herstellerangaben, Datenblätter
-            und dokumentierte Nutzererfahrungen (Trustpilot, Amazon, Community-Foren) zusammengetragen und nach
-            Filterleistung, Folgekosten, Wasserdruck, Installation und Lieferumfang gewichtet, um die Filterduschköpfe zu
-            finden, die wirklich halten, was sie versprechen. Ich mache keine eigenen Labortests, das hier ist ein
-            aggregierter Meta-Review.
+            Die Modelle unterscheiden sich aber stark. Ich hab die bekanntesten in einem <b>Meta-Vergleich</b> ausgewertet
+            – aus Herstellerangaben, Datenblättern und echten Bewertungen (Trustpilot, Amazon, Foren), ohne eigene
+            Labortests. Wunder verspreche ich dabei nicht: Ein Filter mindert Rückstände, ersetzt aber keine
+            Trinkwasseraufbereitung.
           </p>
           <div className="inshort">
             <div className="lbl">Kurz gesagt</div>
@@ -94,25 +88,6 @@ export default function Page() {
             </p>
             <a className="inshort-link" href={PRODUCT_URL}>Zum Anbieter →</a>
           </div>
-        </div>
-      </section>
-
-      {/* METHODE */}
-      <section style={{ paddingTop: '10px' }} id="ratgeber">
-        <div className="wrap narrow">
-          <div className="section-tag">Wie ich bewertet hab</div>
-          <h2>Worauf es bei einem Filterduschkopf für mich wirklich ankommt</h2>
-          <p>
-            Teuer heißt dabei nicht automatisch besser, die Preise reichen von 69 € bis über 110 €. Bewertet hab ich
-            anhand der öffentlichen Quellen in fünf Kategorien: <b>Filterleistung</b>,{' '}
-            <b>Preis-Leistung &amp; Folgekosten</b>, <b>Wasserdruck &amp; Wassersparen</b>, <b>Installation &amp; Design</b>{' '}
-            sowie <b>Service &amp; Lieferumfang</b>.
-          </p>
-          <p>
-            Eins ist mir wichtig: Ich verspreche dir <b>keine Wunder</b>. So ein Filter kann Chlor und feine Partikel im
-            Duschwasser reduzieren, mehr aber auch nicht. Er ist kein Medizinprodukt und ersetzt keine echte Trinkwasser-
-            oder Legionellen-Aufbereitung.
-          </p>
         </div>
       </section>
 
