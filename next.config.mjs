@@ -13,6 +13,12 @@ const nextConfig = {
         destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
         permanent: false,
       },
+      {
+        // Eigener Link für die Landingpage "Haarausfall" (separate Klick-Zuordnung).
+        source: '/duschkopf-haarausfall',
+        destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
+        permanent: false,
+      },
     ];
   },
 };

@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import UpdatedDate from './UpdatedDate';
 
-export default function Hero() {
+export default function Hero({
+  title = 'Duschkopf mit Filter im Test 2026: meine 5 Favoriten im Vergleich',
+}) {
   return (
     <header className="hero">
       <div className="meta-line">
         Anzeige · Autorin: <b>Lena Brandt</b> · Aktualisiert: <UpdatedDate />
         <span className="meta-editor"> · Editiert von: <b>Holger Waidmann</b></span>
       </div>
-      <h1>Duschkopf mit Filter im Test 2026: meine 5 Favoriten im Vergleich</h1>
+      <h1>{title}</h1>
       <div className="hero-media">
         <Image
           src="/images/hero.jpg"
