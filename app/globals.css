@@ -110,7 +110,7 @@ img{max-width:100%;display:block;}
 .inshort p{margin:0;color:var(--ink);font-size:15px;}
 .inshort-link{display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--cta);}
 .inshort-link:hover{color:var(--cta-dark);}
-.tbl-link{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;color:var(--cta);}
+.tbl-link{display:block;margin-top:8px;font-size:13px;font-weight:700;color:var(--cta);}
 .tbl-link:hover{color:var(--cta-dark);}
 
 /* test verdict box (Testsieger im Testseiten-Stil) */
@@ -200,16 +200,25 @@ section{padding:40px 0;}
 .fazit b{color:var(--ink);}
 @media(max-width:680px){.bars{grid-template-columns:1fr;}}
 
-/* comparison table */
+/* comparison table (Desktop) */
 .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:0;background:var(--card);box-shadow:var(--shadow);}
-table{border-collapse:collapse;width:100%;font-size:13px;}
-th,td{padding:10px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere;}
-thead th{background:#101b1a;color:#fff;font-weight:600;font-size:12.5px;}
+table{border-collapse:collapse;width:100%;font-size:13.5px;}
+th,td{padding:13px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle;}
+thead th{background:#101b1a;color:#fff;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;padding-top:14px;padding-bottom:14px;}
+thead th:first-child{padding-left:16px;}
+tbody tr{transition:background .15s ease;}
+tbody tr:hover td{background:#f2f5f4;}
 tbody tr:last-child td{border-bottom:none;}
+td .pname{display:block;font-weight:700;color:var(--ink);font-size:15.5px;line-height:1.25;}
+td b{font-weight:700;color:var(--ink);}
+.check{display:inline-flex;align-items:center;gap:5px;color:var(--teal-dark);font-weight:600;white-space:nowrap;}
+.cross{color:var(--red);font-weight:600;}
+/* Testsieger-Zeile dezent hervorgehoben */
 .col-win{background:var(--gold-soft);}
-td .pname{font-weight:600;color:var(--ink);}
-.check{color:var(--teal);font-weight:700;}
-.cross{color:var(--red);font-weight:700;}
+.win-row td,.win-row:hover td{background:var(--gold-soft);}
+.win-row td:first-child{box-shadow:inset 4px 0 0 var(--gold);}
+.tbl-badge{display:inline-block;margin-top:6px;background:var(--gold-soft);color:#8a6a12;border:1px solid #e6d29a;
+  font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;}
 
 /* trust strip */
 .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}

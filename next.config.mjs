@@ -37,6 +37,12 @@ const nextConfig = {
         destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
         permanent: false,
       },
+      {
+        // Eigener Link für die Dusch-WC-Vergleichsseite (CaldrisWave Pro).
+        source: '/dusch-wc-sieger',
+        destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
+        permanent: false,
+      },
     ];
   },
 };

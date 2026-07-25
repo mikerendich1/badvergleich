@@ -520,9 +520,7 @@ export default function ProductComparison({ productUrl, audienceNotes = {} }) {
                   <td className="col-win pcell">
                     <span className="mob-emp">Unsere Empfehlung</span>
                     <span className="pname">Caldris Flow Plus</span>
-                    <br />
-                    <span style={{ fontSize: '12px', color: '#8a6a12', fontWeight: 600 }}>Testsieger</span>
-                    <br />
+                    <span className="tbl-badge">Testsieger</span>
                     <a className="tbl-link" href={productUrl}>Ansehen →</a>
                   </td>
                   <td className="col-win" data-label="Note">
