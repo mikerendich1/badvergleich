@@ -19,6 +19,12 @@ const nextConfig = {
         destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
         permanent: false,
       },
+      {
+        // Eigener Link für die Landingpage "Trockene Haut".
+        source: '/duschkopf-trockene-haut',
+        destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
+        permanent: false,
+      },
     ];
   },
 };
