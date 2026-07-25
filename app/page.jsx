@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import AnimatedBars from '../components/AnimatedBars';
 import Swot from '../components/Swot';
 import DetailHeader from '../components/DetailHeader';
+import StickyBuyBar from '../components/StickyBuyBar';
 
 // Interner Redirect (siehe next.config.mjs) → leitet auf die Caldris-Produktseite weiter.
 const PRODUCT_URL = '/duschkopf-sieger';
@@ -84,7 +85,7 @@ export default function Page() {
             <div className="lbl">Kurz gesagt</div>
             <p>
               Mein Testsieger ist der <b>Caldris Flow Plus</b> (ab 79 €): mein klarer Favorit. Bestes Gesamtpaket aus
-              Filterleistung, fairen Folgekosten ohne Abo und großzügigem Lieferumfang. Ich bewerte ihn mit <b>9,6/10</b>.
+              Filterleistung, fairen Folgekosten ohne Abo und werkzeugloser Montage. Ich bewerte ihn mit <b>9,6/10</b>.
             </p>
             <a className="inshort-link" href={PRODUCT_URL}>Zum Anbieter →</a>
           </div>
@@ -92,7 +93,7 @@ export default function Page() {
       </section>
 
       {/* TESTSIEGER (nüchterne Verdict-Box im Testseiten-Stil) */}
-      <section style={{ paddingTop: '8px' }}>
+      <section id="platz-1" style={{ paddingTop: '8px', scrollMarginTop: '80px' }}>
         <div className="wrap narrow">
           <div className="verdict">
             <div className="verdict-head">
@@ -186,8 +187,8 @@ export default function Page() {
             </div>
             <div className="vstat">
               <span className="k">Lieferumfang</span>
-              <strong>2 Aufsätze</strong>
-              <span className="s">+ Doppelfilter, kein Abo</span>
+              <strong>Doppelfilter</strong>
+              <span className="s">im Karton, kein Abo</span>
             </div>
           </div>
         </div>
@@ -243,8 +244,7 @@ export default function Page() {
             <p>
               Was für mich den Unterschied macht, ist das Drumherum: <b>kein Pflicht-Abo</b> und nachvollziehbare
               Folgekosten, statt dieser Abo-Falle, über die sich bei der Konkurrenz so viele ärgern. Und im Karton liegt
-              mehr als bei den meisten anderen: <b>zwei Pflegeaufsätze</b> und ein <b>Doppelfilter-System</b>, du musst
-              also nicht sofort nachkaufen.
+              ein <b>Doppelfilter-System</b>, du musst also nicht sofort einen Ersatzfilter nachkaufen.
             </p>
             <div className="bars">
               <div className="bar-row">
@@ -304,8 +304,8 @@ export default function Page() {
                   text: 'Ersatzfilter kaufst du nur bei Bedarf nach, kein Pflicht-Abo, das automatisch abbucht. Die laufenden Kosten bleiben planbar und niedrig.',
                 },
                 {
-                  title: 'Großzügiger Lieferumfang',
-                  text: 'Zwei Pflegeaufsätze für verschiedene Strahlarten und ein Doppelfilter-System liegen bereits bei, du musst nicht sofort nachkaufen.',
+                  title: 'Doppelfilter im Lieferumfang',
+                  text: 'Das Doppelfilter-System liegt bereits im Karton bei, du musst nicht sofort einen Ersatzfilter nachkaufen.',
                 },
                 {
                   title: 'In 2 Minuten montiert',
@@ -696,82 +696,83 @@ export default function Page() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td className="col-win">
+                <tr className="win-row">
+                  <td className="col-win pcell">
+                    <span className="mob-emp">Unsere Empfehlung</span>
                     <span className="pname">Caldris Flow Plus</span>
                     <br />
                     <span style={{ fontSize: '12px', color: '#8a6a12', fontWeight: 600 }}>Testsieger</span>
                     <br />
                     <a className="tbl-link" href={PRODUCT_URL}>Ansehen →</a>
                   </td>
-                  <td className="col-win">
+                  <td className="col-win" data-label="Note">
                     <b>9,6</b>
                   </td>
-                  <td className="col-win">5-Stufen Aktivkohle</td>
-                  <td className="col-win">
+                  <td className="col-win" data-label="Filter">5-Stufen Aktivkohle</td>
+                  <td className="col-win" data-label="Preis">
                     <b>79 €</b>
                   </td>
-                  <td className="col-win">optional</td>
-                  <td className="col-win">
+                  <td className="col-win" data-label="Folgekosten">optional</td>
+                  <td className="col-win" data-label="Abo nötig?">
                     <span className="check">Nein ✓</span>
                   </td>
-                  <td className="col-win">
-                    <span className="check">2 Aufsätze + Doppelfilter</span>
+                  <td className="col-win" data-label="Lieferumfang">
+                    <span className="check">Doppelfilter, kein Abo</span>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="pcell">
                     <span className="pname">Hello Klean 2.0</span>
                   </td>
-                  <td>9,0</td>
-                  <td>2-Stufen</td>
-                  <td>90 € (Abo günstiger)</td>
-                  <td>~40 €/3-4 Mon.</td>
-                  <td>
+                  <td data-label="Note">9,0</td>
+                  <td data-label="Filter">2-Stufen</td>
+                  <td data-label="Preis">90 € (Abo günstiger)</td>
+                  <td data-label="Folgekosten">~40 €/3-4 Mon.</td>
+                  <td data-label="Abo nötig?">
                     <span className="cross">Abo-Standard</span>
                   </td>
-                  <td>nur Duschkopf</td>
+                  <td data-label="Lieferumfang">nur Duschkopf</td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="pcell">
                     <span className="pname">Dupor</span>
                   </td>
-                  <td>8,4</td>
-                  <td>4-Stufen</td>
-                  <td>89 €</td>
-                  <td>separat</td>
-                  <td>
+                  <td data-label="Note">8,4</td>
+                  <td data-label="Filter">4-Stufen</td>
+                  <td data-label="Preis">89 €</td>
+                  <td data-label="Folgekosten">separat</td>
+                  <td data-label="Abo nötig?">
                     <span className="check">Nein</span>
                   </td>
-                  <td>Komplettset</td>
+                  <td data-label="Lieferumfang">Komplettset</td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="pcell">
                     <span className="pname">Sanquell</span>
                   </td>
-                  <td>8,0</td>
-                  <td>0,085-µm-Membran</td>
-                  <td>115 €</td>
-                  <td>
+                  <td data-label="Note">8,0</td>
+                  <td data-label="Filter">0,085-µm-Membran</td>
+                  <td data-label="Preis">115 €</td>
+                  <td data-label="Folgekosten">
                     <span className="cross">~70 €/Filter</span>
                   </td>
-                  <td>
+                  <td data-label="Abo nötig?">
                     <span className="check">Nein</span>
                   </td>
-                  <td>nur Duschkopf</td>
+                  <td data-label="Lieferumfang">nur Duschkopf</td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="pcell">
                     <span className="pname">Doyoo</span>
                   </td>
-                  <td>7,2</td>
-                  <td>3in1</td>
-                  <td>69 €</td>
-                  <td>unklar</td>
-                  <td>
+                  <td data-label="Note">7,2</td>
+                  <td data-label="Filter">3in1</td>
+                  <td data-label="Preis">69 €</td>
+                  <td data-label="Folgekosten">unklar</td>
+                  <td data-label="Abo nötig?">
                     <span className="check">Nein</span>
                   </td>
-                  <td>2 Gratis-Aufsätze</td>
+                  <td data-label="Lieferumfang">2 Gratis-Aufsätze</td>
                 </tr>
               </tbody>
             </table>
@@ -827,8 +828,8 @@ export default function Page() {
                   <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" />
                 </svg>
               </div>
-              <h4>2 Pflegeaufsätze inklusive</h4>
-              <p>Zwei Aufsätze für verschiedene Strahlarten liegen ohne Aufpreis bei.</p>
+              <h4>Werkzeuglose Montage</h4>
+              <p>In rund 2 Minuten ohne Werkzeug am Standardanschluss (G½) montiert.</p>
             </div>
             <div className="tcard">
               <div className="ic">
@@ -893,7 +894,7 @@ export default function Page() {
             <summary>Warum ist der Caldris Flow Plus mein Testsieger?</summary>
             <div className="ans">
               Weil für mich einfach das Gesamtpaket stimmt: 5-Stufen-Aktivkohlefilter, faire Folgekosten ohne Abo,
-              werkzeuglose Montage, schönes Design und obendrein zwei Pflegeaufsätze plus Doppelfilter im Karton. Er
+              werkzeuglose Montage, schönes Design und obendrein das Doppelfilter-System im Karton. Er
               bündelt die Stärken der anderen, ohne ihre typischen Macken wie das Zwangs-Abo.
             </div>
           </details>
@@ -914,8 +915,8 @@ export default function Page() {
           <details>
             <summary>Was ist im Lieferumfang enthalten?</summary>
             <div className="ans">
-              Außer dem Duschkopf bekommst du <b>zwei Pflegeaufsätze</b> für verschiedene Strahlarten und das{' '}
-              <b>Doppelfilter-System</b>, du musst also nicht sofort Ersatz besorgen. Und beim Online-Kauf hast du als
+              Außer dem Duschkopf bekommst du das <b>Doppelfilter-System</b>, du musst also nicht sofort Ersatz
+              besorgen. Und beim Online-Kauf hast du als
               Verbraucher natürlich dein gesetzliches Widerrufsrecht; die Details stehen in der Widerrufsbelehrung im
               Caldris-Shop.
             </div>
@@ -924,11 +925,17 @@ export default function Page() {
       </section>
 
       {/* ABSCHLUSS-CTA */}
-      <section style={{ paddingTop: '4px' }}>
+      <section style={{ paddingTop: '4px' }} id="final-cta">
         <div className="wrap narrow" style={{ textAlign: 'center' }}>
-          <a className="btn" href={PRODUCT_URL}>
+          <a className="btn cta-final" href={PRODUCT_URL}>
             Zum Testsieger: Caldris Flow Plus →
           </a>
+          <ul className="cta-trust">
+            <li>14 Tage Widerrufsrecht</li>
+            <li>Sichere Zahlung</li>
+            <li>Schneller Versand</li>
+            <li>4,8 von 5 aus 345 Bewertungen</li>
+          </ul>
         </div>
       </section>
 
@@ -1057,6 +1064,7 @@ export default function Page() {
       </footer>
 
       <AnimatedBars />
+      <StickyBuyBar href={PRODUCT_URL} />
     </>
   );
 }

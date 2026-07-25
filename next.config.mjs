@@ -2,6 +2,10 @@
 const nextConfig = {
   // Alle Bilder werden lokal aus /public/images über next/image ausgeliefert,
   // daher ist keine images.remotePatterns-Konfiguration mehr nötig.
+  images: {
+    // Moderne, kleinere Formate für schnellere mobile Ladezeiten.
+    formats: ['image/avif', 'image/webp'],
+  },
   async redirects() {
     return [
       {
