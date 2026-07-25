@@ -25,6 +25,18 @@ const nextConfig = {
         destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
         permanent: false,
       },
+      {
+        // Eigener Link für die Landingpage "Sprödes/glänzendes Haar".
+        source: '/duschkopf-glanz',
+        destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
+        permanent: false,
+      },
+      {
+        // Eigener Link für die Landingpage "Weniger Kalkablagerungen".
+        source: '/duschkopf-kalk',
+        destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
+        permanent: false,
+      },
     ];
   },
 };
