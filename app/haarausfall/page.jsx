@@ -6,7 +6,7 @@ import ProductComparison from '../../components/ProductComparison';
 import StickyBuyBar from '../../components/StickyBuyBar';
 
 export const metadata = {
-  title: 'Duschkopf bei Haarausfall: welcher Filter Haar & Kopfhaut am besten schont (Vergleich 2026) | BadVergleich',
+  title: 'Duschkopf bei Haarausfall: welcher Filter Haar & Kopfhaut am besten schont | BadVergleich',
   description:
     'Hartes, gechlortes Wasser stresst Haar und Kopfhaut. Wir vergleichen 5 Filterduschköpfe (Caldris, Hello Klean, Dupor, Sanquell, Doyoo) nach Filterleistung, Preis und Folgekosten. Ehrlich, ohne Heilversprechen.',
 };
@@ -59,7 +59,7 @@ export default function Page() {
 
       <div className="shell">
         <main className="shell-main">
-          <Hero title="Duschkopf bei Haarausfall: welcher Filter Haar und Kopfhaut am besten schont (Vergleich 2026)" />
+          <Hero title="Duschkopf bei Haarausfall: welcher Filter Haar und Kopfhaut am besten schont" />
 
           {/* INTRO (zielgruppenspezifisch: Haar & Kopfhaut) */}
           <section style={{ padding: '24px 0 0' }}>
@@ -71,15 +71,11 @@ export default function Page() {
                 leichter und fühlt sich weniger voll an.
               </p>
 
-              <div className="inshort" style={{ borderLeftColor: 'var(--gold)', background: 'var(--gold-soft)' }}>
-                <div className="lbl" style={{ color: '#8a6a12' }}>Ehrlich vorab</div>
-                <p>
-                  Ein Filterduschkopf ist <b>kein Mittel gegen Haarausfall</b> und ersetzt keine ärztliche Abklärung. Er
-                  behandelt keine erblich oder hormonell bedingten Ursachen. Was ein guter Filter kann: das Wasser
-                  schonender machen, Chlor und Rückstände reduzieren und so Haarbruch durch aggressives Wasser mindern.
-                  Bei anhaltendem Haarausfall ist die richtige Adresse deine Haus- oder Hautärztin.
-                </p>
-              </div>
+              <p className="honest-note">
+                <b>Ehrlich vorab:</b> Ein Filterduschkopf ist kein Mittel gegen Haarausfall und ersetzt keine ärztliche
+                Abklärung. Er kann das Wasser schonender machen und Chlor sowie Kalk reduzieren, mehr verspreche ich hier
+                bewusst nicht. Bei anhaltendem Haarausfall ist deine Haus- oder Hautärztin die richtige Adresse.
+              </p>
 
               <div className="author" style={{ margin: '18px 0' }}>
                 <div className="ava">
@@ -231,8 +227,17 @@ export default function Page() {
             </div>
           </section>
 
-          {/* GEMEINSAMER VERGLEICH (5 Modelle + Tabelle) */}
-          <ProductComparison productUrl={PRODUCT_URL} />
+          {/* GEMEINSAMER VERGLEICH (5 Modelle + Tabelle) mit Haar-/Kopfhaut-Hinweisen */}
+          <ProductComparison
+            productUrl={PRODUCT_URL}
+            audienceNotes={{
+              cd: 'Die 5-Stufen-Aktivkohle nimmt Chlor und Kalk aus dem Wasser, also genau die Stoffe, die Haar und Kopfhaut austrocknen und strohig wirken lassen. Wer bei hartem Wasser sprödes, brüchiges Haar kennt, profitiert hier am deutlichsten, ohne Abo-Bindung.',
+              hk: 'Der Beauty-Fokus zielt bewusst auf Haut und Haar, der 2-Stufen-Filter reduziert Chlor. Für die Haarpflege solide, aber durch das Refill-Abo wird der dauerhafte Einsatz spürbar teurer.',
+              dp: '4-Stufen-Filterung senkt Chlor und Kalk zuverlässig, das kommt Kopfhaut und Haargefühl zugute, ganz ohne Abo. Nur Marken- und Bildwelt wirken weniger hochwertig.',
+              sq: 'Die Sicherheitsmembran zielt auf Keime und Legionellen, nicht primär auf weiches Haar-Wasser. Fürs tägliche Schonen von Haar und Kopfhaut ist das überdimensioniert und mit teuren Filtern verbunden.',
+              dy: 'Wirbt mit Beauty-Extras wie Peeling und Bürste, doch Filterwechsel und Folgekosten für dauerhafte Haarpflege bleiben unklar, und der Service ist ein Vertrauensthema.',
+            }}
+          />
 
           {/* TRUST (zielgruppenspezifisch) */}
           <section style={{ background: '#eef3f2' }}>

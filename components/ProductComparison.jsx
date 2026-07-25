@@ -5,7 +5,7 @@ import Swot from './Swot';
 // und die Schnellvergleich-Tabelle. Wird von der Hauptseite und allen
 // Landingpages genutzt (eine einzige Datenquelle für Anbieter/Preise/Noten).
 // productUrl steuert den Redirect-/Affiliate-Link (pro Seite unterschiedlich).
-export default function ProductComparison({ productUrl }) {
+export default function ProductComparison({ productUrl, audienceNotes = {} }) {
   return (
     <>
       {/* DETAILED ANALYSIS */}
@@ -41,6 +41,11 @@ export default function ProductComparison({ productUrl }) {
               Folgekosten, statt dieser Abo-Falle, über die sich bei der Konkurrenz so viele ärgern. Und im Karton liegt
               ein <b>Doppelfilter-System</b>, du musst also nicht sofort einen Ersatzfilter nachkaufen.
             </p>
+            {audienceNotes.cd && (
+              <div className="angle-note">
+                <b>Für Haar &amp; Kopfhaut:</b> {audienceNotes.cd}
+              </div>
+            )}
             <div className="bars">
               <div className="bar-row">
                 <div className="lbl">
@@ -148,6 +153,11 @@ export default function ProductComparison({ productUrl }) {
               <b> 90 €</b> und damit über den meisten Konkurrenten – spürbar günstiger wird es nur mit dem Filter-Abo. Dazu
               war es in der EU zwischendurch ausverkauft.
             </p>
+            {audienceNotes.hk && (
+              <div className="angle-note">
+                <b>Für Haar &amp; Kopfhaut:</b> {audienceNotes.hk}
+              </div>
+            )}
             <div className="bars">
               <div className="bar-row">
                 <div className="lbl">
@@ -233,6 +243,11 @@ export default function ProductComparison({ productUrl }) {
               weniger hochwertig, auf der Produktseite sieht man nur eine Handvoll ausgewählter Stimmen, und die Marke hat
               einfach nicht die Strahlkraft von Hello Klean oder Caldris.
             </p>
+            {audienceNotes.dp && (
+              <div className="angle-note">
+                <b>Für Haar &amp; Kopfhaut:</b> {audienceNotes.dp}
+              </div>
+            )}
             <div className="bars">
               <div className="bar-row">
                 <div className="lbl">
@@ -319,6 +334,11 @@ export default function ProductComparison({ productUrl }) {
               <b>Ersatzfilter sind mit ca. 70 € teuer</b> (halten bis zu ~6 Monate bzw. 6.500 L). Beim Wasserdruck und der
               Filterlaufzeit gibt's außerdem Kritik.
             </p>
+            {audienceNotes.sq && (
+              <div className="angle-note">
+                <b>Für Haar &amp; Kopfhaut:</b> {audienceNotes.sq}
+              </div>
+            )}
             <div className="bars">
               <div className="bar-row">
                 <div className="lbl">
@@ -405,6 +425,11 @@ export default function ProductComparison({ productUrl }) {
               1-Stern-Erfahrungen, vor allem wegen <b>langer Lieferzeiten und mühsamer Retouren</b>. Für mich ein
               Vertrauensthema.
             </p>
+            {audienceNotes.dy && (
+              <div className="angle-note">
+                <b>Für Haar &amp; Kopfhaut:</b> {audienceNotes.dy}
+              </div>
+            )}
             <div className="bars">
               <div className="bar-row">
                 <div className="lbl">
