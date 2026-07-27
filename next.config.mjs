@@ -38,6 +38,18 @@ const nextConfig = {
         permanent: false,
       },
       {
+        // Eigener Link für die Landingpage "Gegen Chlorwasser".
+        source: '/duschkopf-chlor',
+        destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
+        permanent: false,
+      },
+      {
+        // Eigener Link für die Landingpage "Gegen hartes Wasser".
+        source: '/duschkopf-hartes-wasser',
+        destination: 'https://www.caldris-home.com/products/caldris-flow-shower-head',
+        permanent: false,
+      },
+      {
         // Eigener Link für die Dusch-WC-Vergleichsseite (CaldrisWave Pro).
         source: '/dusch-wc-sieger',
         destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
@@ -64,6 +76,18 @@ const nextConfig = {
       {
         // Dusch-WC-Landingpage "Hämorrhoiden / empfindliche Haut".
         source: '/dusch-wc-haut-sieger',
+        destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
+        permanent: false,
+      },
+      {
+        // Dusch-WC-Landingpage "Japanische Toilette / Washlet".
+        source: '/dusch-wc-japan-sieger',
+        destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
+        permanent: false,
+      },
+      {
+        // Dusch-WC-Landingpage "Nachhaltigkeit / weniger Papier".
+        source: '/dusch-wc-nachhaltig-sieger',
         destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
         permanent: false,
       },
