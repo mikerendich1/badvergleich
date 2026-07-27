@@ -43,6 +43,30 @@ const nextConfig = {
         destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
         permanent: false,
       },
+      {
+        // Dusch-WC-Landingpage "Senioren".
+        source: '/dusch-wc-senioren-sieger',
+        destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
+        permanent: false,
+      },
+      {
+        // Dusch-WC-Landingpage "Familien".
+        source: '/dusch-wc-familien-sieger',
+        destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
+        permanent: false,
+      },
+      {
+        // Dusch-WC-Landingpage "Mieter".
+        source: '/dusch-wc-mieter-sieger',
+        destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
+        permanent: false,
+      },
+      {
+        // Dusch-WC-Landingpage "Hämorrhoiden / empfindliche Haut".
+        source: '/dusch-wc-haut-sieger',
+        destination: 'https://www.caldris-home.com/products/smart-dusch-wc',
+        permanent: false,
+      },
     ];
   },
 };
